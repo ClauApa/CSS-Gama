@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,100;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="StyleProjeto.css">
+    <title>Claudia Aparicio</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./Imagens/LogoCA.png" alt="CA" width="40" height="40">
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="https://github.com/ClauApa/"> github</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:cca.aparicio@gmail.com"> email</a>
+            </li>
+            <li>               
+                <a target="blank" href="https://wa.me/5511944469977/"> whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Claudia Aparicio</h1>
+                <h5>Full Stacker learner</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-chevron-down"></i>
+            </div>
+
+
+            <div style="display: none" id="about">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem obcaecati soluta fuga nihil maiores illo, dolores quisquam nobis reiciendis?
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+            
+            
+        </section>
+    </main>
+
+<script>
+    function displayAbout() {
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById('about');
+        display.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
